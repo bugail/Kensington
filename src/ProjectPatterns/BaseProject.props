@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+    <PropertyGroup>
+        <TargetFramework Condition="'$(TargetFramework)' == ''">net8.0</TargetFramework>
+        <AssemblyName>Kensington.$(MSBuildProjectName)</AssemblyName>
+        <RootNamespace>Kensington.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <NeutralLanguage>en-GB</NeutralLanguage>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        <CodeAnalysisRuleSet Condition="'$(CodeAnalysisRuleSet)' == ''">$(SolutionDir)/Stylecop.ruleset</CodeAnalysisRuleSet>
+    </PropertyGroup>
+
+    <!-- Set assembly properties -->
+    <PropertyGroup>
+        <Company Condition="'$(Company)' == ''">Bugail Consulting Ltd</Company>
+        <Copyright Condition="'$(Copyright)' == ''">Copyright © 2024 $(Company)</Copyright>
+        <Authors Condition="'$(Authors)' == ''">$(Company)</Authors>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Update="IDisposableAnalyzers" Version="4.0.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="$(SolutionDir)\stylecop.json" Link="stylecop.json" />
+    </ItemGroup>
+
+    <!-- Enable documentation generation -->
+    <PropertyGroup>
+        <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+</Project>

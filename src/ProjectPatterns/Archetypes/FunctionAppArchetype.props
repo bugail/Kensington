@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <Import Project="../BaseProject.props" />
+    <Import Project="../Patterns/LoggingPattern.props" />
+
+    <PropertyGroup>
+        <AzureFunctionsVersion>V4</AzureFunctionsVersion>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.22.0" />
+        <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.17.2" />
+    </ItemGroup>
+
+</Project>

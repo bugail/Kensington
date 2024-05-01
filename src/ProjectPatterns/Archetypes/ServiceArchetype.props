@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <Import Project="../BaseProject.props" />
+    <Import Project="../Patterns/LoggingPattern.props" />
+    <Import Project="../Patterns/MappingPattern.props" />
+    <Import Project="../Patterns/MediatorPattern.props" />
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.4" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="FluentValidation" Version="11.9.1" />
+    </ItemGroup>
+
+</Project>

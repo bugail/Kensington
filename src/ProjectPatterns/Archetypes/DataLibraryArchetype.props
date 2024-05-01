@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <Import Project="SharedLibraryArchetype.props" />
+    <Import Project="../Patterns/EntityFrameworkPattern.props" />
+    <Import Project="../Patterns/MappingPattern.props" />
+    
+</Project>

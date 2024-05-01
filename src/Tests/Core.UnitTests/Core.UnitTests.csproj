@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="$(SolutionDir)/ProjectPatterns/Archetypes/UnitTestingArchetype.props" />
+
+    <ItemGroup>
+        <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Core\Core.csproj" />
+    </ItemGroup>
+
+</Project>

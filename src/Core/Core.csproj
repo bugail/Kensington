@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="$(SolutionDir)/ProjectPatterns/Archetypes/SharedLibraryArchetype.props" />
+    <Import Project="$(SolutionDir)/ProjectPatterns/Patterns/MediatorPattern.props" />
+    <Import Project="$(SolutionDir)/ProjectPatterns/Patterns/MappingPattern.props" />
+    <ItemGroup>
+      <Folder Include="Messages\" />
+    </ItemGroup>
+
+</Project>
+
+
+

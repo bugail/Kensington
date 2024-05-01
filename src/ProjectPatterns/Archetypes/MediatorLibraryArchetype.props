@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+    <Import Project="SharedLibraryArchetype.props" />
+    <Import Project="../Patterns/MediatorPattern.props" />
+    <Import Project="../Patterns/LoggingAbstractionPattern.props" />
+    <Import Project="../Patterns/MappingPattern.props" />
+    
+    <ItemGroup>
+        <PackageReference Include="FluentValidation" Version="10.3.3" />
+    </ItemGroup>
+    
+</Project>
